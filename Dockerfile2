@@ -1,0 +1,3 @@
+FROM mainak90/helmer:v1
+
+COPY static/ /dist/static

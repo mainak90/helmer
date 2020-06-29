@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="239203ce-155f-43d3-b495-4004a8d51b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart/helmer/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chart/helmer/values.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +129,8 @@
     <MESSAGE value="Added dockerfile" />
     <MESSAGE value="Helm Charts Added" />
     <MESSAGE value="Readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme" />
+    <MESSAGE value="Readme changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme changes" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

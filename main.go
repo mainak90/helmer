@@ -3,13 +3,13 @@ package main
 import (
 	"database/sql"
 	_ "encoding/json"
+	"filepath"
 	"github.com/mainak90/helmer/controllers"
 	"github.com/mainak90/helmer/driver"
 	"github.com/mainak90/helmer/models"
 	"github.com/mainak90/helmer/utils"
 	"log"
 	"net/http"
-	_ "strconv"
 
 	"github.com/gorilla/mux"
 	"github.com/subosito/gotenv"

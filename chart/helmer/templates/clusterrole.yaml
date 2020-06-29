@@ -1,0 +1,16 @@
+{{- if and .Values.rbac.create -}}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app: {{ include "helmer.fullname" . }}
+    release: {{ .Release.Name }}
+  name: {{ include "helmer.fullname" . }}-role
+rules:
+- apiGroups:
+  - ""
+  resources: ["*"]
+  verbs: ["*"]
+- nonResourceURLs: ["*"]
+  verbs: ["*"]
+{{- end -}}

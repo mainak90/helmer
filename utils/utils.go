@@ -18,7 +18,6 @@ import (
 	"helm.sh/helm/v3/pkg/action"
 )
 
-
 /// These are some helper functions to help the main controllers
 
 // Helper function to check if a file exists..
@@ -54,8 +53,8 @@ func GetActionConfig(namespace string) (*action.Configuration, error) {
 			return nil, err
 		}
 		return actionConfig, nil
-	} else if FileExists("/etc/rancher/k3s/k3s.yaml"){
-		// Incase using k3s distro
+	} else if FileExists("/etc/rancher/k3s/k3s.yaml") {
+		// Incase using rancher k3s distro
 		log.Printf("Rancher k3s config detected!")
 		configFile = "/etc/rancher/k3s/k3s.yaml"
 		if err := actionConfig.Init(kube.GetConfig(configFile, "", namespace), namespace, os.Getenv("HELM_DRIVER"), log.Printf); err != nil {
@@ -127,8 +126,8 @@ func WatchFile(db *sql.DB) {
 				slices := strings.Split(event.Path, "/")
 				// Resorted to use table row deletion on name and version as using path as field
 				// doesn't work somehow.
-				version := slices[len(slices) - 2]
-				name := slices[len(slices) - 3]
+				version := slices[len(slices)-2]
+				name := slices[len(slices)-3]
 				log.Printf("Removing record from database for chart in path %s", name)
 				chartQuery := chartQueries.ChartQueries{}
 				del := chartQuery.RemoveChart(db, name, version)

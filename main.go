@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	_ "encoding/json"
-	"filepath"
 	"github.com/mainak90/helmer/controllers"
 	"github.com/mainak90/helmer/driver"
 	"github.com/mainak90/helmer/models"
